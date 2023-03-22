@@ -10,8 +10,53 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Container(),
+      home: SafeArea(
+        child: Scaffold(
+          body: Column(
+            children: [
+              Container(
+                height: 60,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Center(child: Text('by')),
+              ),
+              Container(
+                height: 60,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Center(child: Text('by')),
+              ),
+              Container(
+                height: 60,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Center(child: Text('by')),
+              ),
+              Container(
+                height: 60,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Center(child: Text('by')),
+              ),
+              Container(
+                height: 60,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                ),
+                child: Center(child: Text('by')),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
